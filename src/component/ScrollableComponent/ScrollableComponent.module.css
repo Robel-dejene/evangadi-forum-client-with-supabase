@@ -1,0 +1,13 @@
+/* styles.css */
+.scrollable_container {
+	width: 60vw;
+	height: 500px; /* Adjust height as needed */
+	overflow-y: auto; /* Enables vertical scrolling */
+	border: 1px solid #ccc; /* Optional: for visual separation */
+	padding: 10px; /* Optional: for padding inside the container */
+	/* box-sizing: border-box; */
+     /* Include padding and border in the element's total width and height */
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 2vh;
+}

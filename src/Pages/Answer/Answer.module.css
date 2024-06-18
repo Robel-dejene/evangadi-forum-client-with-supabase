@@ -1,0 +1,66 @@
+.middle {
+	max-width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10vh;
+}
+.middle button {
+	text-align: end;
+	background-color: #516cf0;
+	display: flex;
+}
+.border_bottom h1 {
+	/* border-bottom: 1px solid rgb(209, 206, 206); */
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.border_bottom {
+	max-width: 60vw;
+	margin: 0 auto;
+}
+.answerPage {
+	margin-top: 6vh;
+	margin-bottom: 5vh;
+}
+.answer {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	gap: 4vw;
+}
+.answer div p{
+	/* text-align: center; */
+}
+.middle small {
+	color: black;
+}
+.top_bottom {
+	border-bottom: 1px solid rgb(209, 206, 206);
+	border-top: 1px solid rgb(209, 206, 206);
+	padding: 15px;
+	margin: 0px;
+}
+.answers_list {
+	color: rgb(95, 92, 92);
+}
+textarea {
+	padding: 1vw;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .border_bottom, .middle {
+        width: 90%;
+    }
+
+    .answer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}

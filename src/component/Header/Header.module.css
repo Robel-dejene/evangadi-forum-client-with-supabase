@@ -1,0 +1,126 @@
+.outer_container {
+	border-bottom: 1px solid rgb(190, 188, 188);
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	max-width: 100vw;
+	z-index: 1100;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+	max-width: 85vw;
+	text-align: center;
+	margin: auto;
+	/* cursor: pointer; */
+}
+.inside_container {
+	width: 250px;
+	margin-left: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* text-align: end; */
+}
+.inside_container div {
+	cursor: pointer;
+}
+.inside_container button {
+	background-color: #516cf1;
+	border: none;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button {
+	border: none;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 2px solid white;
+}
+.menu_icon {
+	display: none;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+	.menu_icon {
+		display: block; /* Show menu icon on smaller screens */
+		cursor: pointer;
+	}
+
+	.header {
+		justify-content: space-between; /* Ensure spacing for menu icon */
+	}
+	.inside_container {
+		position: fixed;
+		top: 0;
+		left: -500px;
+		width: 300px;
+		height: 100vh;
+		background-color: grey;
+		box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 20px;
+		transition: left 0.3s ease; /* Transition for sliding effect */
+		z-index: 1100; /* Ensure it covers the page */
+	}
+	.show_menu {
+		left: 0; /* Bring the menu on-screen */
+	}
+	.two {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		width: 70%;
+		/* text-align: left; */
+	}
+	.two div {
+		/* margin: 0 auto; */
+		margin-bottom: 10px;
+	}
+	.two button {
+		/* margin: 0 auto; */
+		/* margin-bottom: 5px; */
+		/* text-align: left; */
+	}
+	.menu_icon {
+		display: block; /* Show menu icon on smaller screens */
+		cursor: pointer;
+	}
+
+	.inside_container {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 0;
+		max-width: 100%;
+		display: none;
+	}
+
+	.show_menu {
+		display: flex; /* Show menu items when menu is toggled */
+	}
+
+	.inside_container div,
+	.inside_container button {
+		border-bottom: 1px solid gray;
+		margin-bottom: 10px;
+	}
+	.inside_container div a:hover{
+		color: blue;
+		background-color: #fe8303;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	.inside_container div button:hover{
+		background-color: #fe8303;
+	}
+}
