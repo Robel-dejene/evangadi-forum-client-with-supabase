@@ -85,7 +85,7 @@ function Home() {
 										key={question.questionid}
 									>
 										<div className={classes.questionList}>
-											<div className="avatar">
+											<div className={classes.avatar}>
 												<AccountCircleOutlinedIcon
 													style={{ fontSize: "100" }}
 												/>
