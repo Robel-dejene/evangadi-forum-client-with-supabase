@@ -2,8 +2,8 @@ button {
 	background-color: #fe8303;
 }
 .small {
-	/* color: #fe8303; */
-	color: yellow;
+	color: #fe8303;
+	/* color: yellow; */
 }
 .two_boxes {
 	display: flex;
